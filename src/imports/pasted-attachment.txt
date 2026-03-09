@@ -1,0 +1,120 @@
+🔄 Implement Tunemymusic Integration — Playlist Export Feature
+Add a "Save to Spotify" flow using Tunemymusic as the bridge. Remove any existing Spotify OAuth playlist-saving code and replace it entirely with this implementation. Do not change any other feature, UI layout, or playlist generation logic.
+
+What This Does
+Instead of saving directly to Spotify via API, the app formats the generated playlist as plain text and redirects the user to Tunemymusic with the track list ready to transfer to Spotify, Apple Music, YouTube Music, or any platform they choose.
+
+Step 1 — Remove Existing Spotify Save Code
+Find and remove:
+
+Any POST /v1/users/{user_id}/playlists calls
+Any POST /v1/playlists/{playlist_id}/tracks calls
+Any Spotify OAuth token logic used specifically for saving
+Any playlist-modify-public or playlist-modify-private scope references
+Keep all Spotify search code untouched — only remove the saving logic
+
+
+Step 2 — Build the Playlist Text Formatter
+Create a function that converts the generated playlist object into plain text that Tunemymusic can read:
+javascriptfunction formatPlaylistForTunemymusic(playlist) {
+  const trackList = playlist.tracks
+    .map(track => `${track.track_name} - ${track.artist}`)
+    .join("\n");
+
+  return trackList;
+}
+```
+
+Output should look exactly like this:
+```
+God's Plan - Drake
+Nights - Frank Ocean
+Redbone - Childish Gambino
+Location - Khalid
+Pink + White - Frank Ocean
+No numbering, no extra formatting, no album names. Just Track Name - Artist on each line. This is the exact format Tunemymusic accepts.
+
+Step 3 — Build the Tunemymusic Redirect Function
+javascriptfunction saveToSpotifyViaTunemymusic(playlist) {
+
+  // Format the track list as plain text
+  const trackList = formatPlaylistForTunemymusic(playlist);
+
+  // Encode it for URL safe transfer
+  const encodedTracks = encodeURIComponent(trackList);
+  const encodedTitle = encodeURIComponent(playlist.playlist_title);
+
+  // Build the Tunemymusic URL
+  const tunemymusicUrl = `https://www.tunemymusic.com/transfer?source=text&playlistName=${encodedTitle}&songs=${encodedTracks}`;
+
+  // Open in a new tab so user doesn't lose their generated playlist
+  window.open(tunemymusicUrl, "_blank");
+}
+```
+
+---
+
+### Step 4 — Update the Save Button
+
+Find the existing **"Save to Spotify"** button and update it:
+
+**Replace the button label with:**
+```
+Save to Any Music App
+Replace the onClick handler with:
+javascriptonClick={() => saveToSpotifyViaTunemymusic(playlist)}
+```
+
+**Add a small subtitle under the button:**
+```
+Works with Spotify, Apple Music, YouTube Music & more
+```
+
+---
+
+### Step 5 — Add a Tooltip or Info Note
+
+Directly below or near the save button, add a small informational line so users know what to expect before they click:
+```
+You'll be taken to Tunemymusic to complete the save.
+It's free and takes less than a minute.
+Style it as subdued text — small font, low opacity. Not a popup, just a quiet reassurance.
+
+Step 6 — Add a Copy to Clipboard Fallback
+Some users may want to handle it themselves. Add a secondary "Copy Track List" button beside the main save button:
+javascriptfunction copyTrackList(playlist) {
+  const trackList = formatPlaylistForTunemymusic(playlist);
+  navigator.clipboard.writeText(trackList);
+
+  // Update button text briefly to confirm
+  setCopyButtonText("✓ Copied!");
+  setTimeout(() => setCopyButtonText("Copy Track List"), 2000);
+}
+Button label: "Copy Track List"
+After clicking: changes to "✓ Copied!" for 2 seconds then resets.
+
+Step 7 — Button States to Implement
+StatePrimary ButtonSecondary ButtonDefaultSave to Any Music AppCopy Track ListPrimary clickedOpens Tunemymusic in new tab—Secondary clicked—✓ Copied! for 2 seconds
+No loading state needed on the primary button — it just opens a new tab instantly.
+
+Step 8 — Update the Platform Icons (Optional but Recommended)
+Instead of showing only the Spotify logo on the save button, show a row of small platform icons to visually communicate that it works everywhere:
+Show icons for: Spotify · Apple Music · YouTube Music · Amazon Music
+Place them as small greyscale logos underneath the button label. This immediately communicates the multi-platform value without needing extra explanation.
+
+What Stays Exactly the Same:
+
+Playlist generation flow
+Spotify track search (finding track names and album art)
+All UI layout and design
+Playlist display, mood tags, track list
+Regenerate button
+Everything else in the app
+
+What Changes:
+
+Save button label and behavior
+No Spotify OAuth triggered for saving
+No direct Spotify playlist API calls
+Tunemymusic handles the actual saving
+Copy to clipboard added as a fallback

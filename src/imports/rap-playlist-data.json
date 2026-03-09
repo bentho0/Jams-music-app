@@ -1,0 +1,206 @@
+[Hydrated]
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:5374 [Jams] Sandbox check at module load: false | SW controller: none (SW not yet active)
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:4847 Generating playlist for: create rap playlist
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:6368 [Jams] Calling /generate-playlist → attempt 1/2 Object
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:6385 [Jams] /generate-playlist response status: 200
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:6390 [Jams] Playlist received — title: Rhythmic Realms | tracks: 12
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:6390 [Jams] Full playlist object: {
+  "playlist_title": "Rhythmic Realms",
+  "playlist_description": "Dive into a diverse collection of rap from lyrical legends to underground gems. Perfect for both casual listeners and hardcore hip-hop aficionados, this playlist hits hard and resonates deep.",
+  "tracks": [
+    {
+      "spotify_track_id": "2AP7m2dBb8ULTx4Gc1rdMc",
+      "track_name": "Juicy",
+      "artist": "The Notorious B.I.G.",
+      "album": "Greatest Hits",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e02f7a29d6fe5d39ec9313a19cb",
+      "duration_ms": 285760,
+      "duration_formatted": "4:45",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/2AP7m2dBb8ULTx4Gc1rdMc"
+    },
+    {
+      "spotify_track_id": "119c93MHjrDLJTApCVGpvx",
+      "track_name": "C.R.E.A.M. (Cash Rules Everything Around Me)",
+      "artist": "Wu-Tang Clan",
+      "album": "Enter The Wu-Tang (36 Chambers) [Expanded Edition]",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e025901aaa980d3e714bf01171c",
+      "duration_ms": 252026,
+      "duration_formatted": "4:12",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/119c93MHjrDLJTApCVGpvx"
+    },
+    {
+      "spotify_track_id": "3iVcZ5G6tvkXZkZKlMpIUs",
+      "track_name": "Alright",
+      "artist": "Kendrick Lamar",
+      "album": "To Pimp A Butterfly",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e02cdb645498cd3d8a2db4d05e1",
+      "duration_ms": 219333,
+      "duration_formatted": "3:39",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/3iVcZ5G6tvkXZkZKlMpIUs"
+    },
+    {
+      "spotify_track_id": "0SPUNC31ZXVbadaj4M5TfD",
+      "track_name": "Dumb It Down (feat. GemStones & Graham Burris)",
+      "artist": "Lupe Fiasco, Gemstones, Graham Burris",
+      "album": "Lupe Fiasco's The Cool",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e02c3244d303444a43b933b9bf4",
+      "duration_ms": 243746,
+      "duration_formatted": "4:03",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/0SPUNC31ZXVbadaj4M5TfD"
+    },
+    {
+      "spotify_track_id": "4ipnJyDU3Lq15qBAYNqlqK",
+      "track_name": "Mi Gente",
+      "artist": "J Balvin, Willy William",
+      "album": "Mi Gente",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e02dc1e881b8bb3e6ca57e82fcd",
+      "duration_ms": 189440,
+      "duration_formatted": "3:09",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/4ipnJyDU3Lq15qBAYNqlqK"
+    },
+    {
+      "spotify_track_id": "14AZvDYPvlYIGYAFC3GU0F",
+      "track_name": "Falling",
+      "artist": "LADIPOE, Tems",
+      "album": "T.A.P (Talk About Poe)",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e027b900349e867c9dc0f93ecdb",
+      "duration_ms": 192683,
+      "duration_formatted": "3:12",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/14AZvDYPvlYIGYAFC3GU0F"
+    },
+    {
+      "spotify_track_id": "0eEXcw3JLVXcRxYrVYMy68",
+      "track_name": "Electric Relaxation",
+      "artist": "A Tribe Called Quest",
+      "album": "The Anthology",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e02b1ddb9f5f519e0d37bc94a53",
+      "duration_ms": 226133,
+      "duration_formatted": "3:46",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/0eEXcw3JLVXcRxYrVYMy68"
+    },
+    {
+      "spotify_track_id": "712uvW1Vezq8WpQi38v2L9",
+      "track_name": "Bitch, Don’t Kill My Vibe",
+      "artist": "Kendrick Lamar",
+      "album": "good kid, m.A.A.d city (Deluxe)",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e02d58e537cea05c2156792c53d",
+      "duration_ms": 310720,
+      "duration_formatted": "5:10",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/712uvW1Vezq8WpQi38v2L9"
+    },
+    {
+      "spotify_track_id": "4BycRneKmOs6MhYG9THsuX",
+      "track_name": "Find Your Love",
+      "artist": "Drake",
+      "album": "Thank Me Later",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e0211b21e8b868800918d21bb77",
+      "duration_ms": 208946,
+      "duration_formatted": "3:28",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/4BycRneKmOs6MhYG9THsuX"
+    },
+    {
+      "spotify_track_id": "2X2S3KBzWe2xrjMi8ILtTF",
+      "track_name": "The Light",
+      "artist": "Common",
+      "album": "Like Water For Chocolate",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e027bf7e051d397970737661d05",
+      "duration_ms": 261693,
+      "duration_formatted": "4:21",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/2X2S3KBzWe2xrjMi8ILtTF"
+    },
+    {
+      "spotify_track_id": "2woZp7c5x1ZP5iSWKj4J2Z",
+      "track_name": "On The Come Up",
+      "artist": "Lady London, Rapsody, Jamila C. Gray",
+      "album": "On The Come Up",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e026e18084612506f1ce71c5027",
+      "duration_ms": 177319,
+      "duration_formatted": "2:57",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/2woZp7c5x1ZP5iSWKj4J2Z"
+    },
+    {
+      "spotify_track_id": "0trHOzAhNpGCsGBEu7dOJo",
+      "track_name": "N.Y. State of Mind",
+      "artist": "Nas",
+      "album": "Illmatic",
+      "reason": "",
+      "album_art": "https://i.scdn.co/image/ab67616d00001e0271d840defb002ed3b180f7cd",
+      "duration_ms": 294081,
+      "duration_formatted": "4:54",
+      "is_new": false,
+      "preview_url": null,
+      "spotify_url": "https://open.spotify.com/track/0trHOzAhNpGCsGBEu7dOJo"
+    }
+  ],
+  "mood_tags": [
+    "empowering",
+    "introspective",
+    "energetic"
+  ],
+  "audio_profile": {
+    "avg_tempo": 136,
+    "avg_energy": 0.7,
+    "avg_valence": 0.7899999999999999
+  }
+}
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:6390 [Jams] First track full object: {
+  "spotify_track_id": "2AP7m2dBb8ULTx4Gc1rdMc",
+  "track_name": "Juicy",
+  "artist": "The Notorious B.I.G.",
+  "album": "Greatest Hits",
+  "reason": "",
+  "album_art": "https://i.scdn.co/image/ab67616d00001e02f7a29d6fe5d39ec9313a19cb",
+  "duration_ms": 285760,
+  "duration_formatted": "4:45",
+  "is_new": false,
+  "preview_url": null,
+  "spotify_url": "https://open.spotify.com/track/2AP7m2dBb8ULTx4Gc1rdMc"
+}
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:5476 [Jams] playlistData prop changed — syncing livePlaylistData
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:5476 [Jams] New playlist title: Rhythmic Realms | tracks: 12
+f30473fe25b6ce8b3663209f4bb7d777f1851ce9.js:5476 [Jams] First track full object: {
+  "spotify_track_id": "2AP7m2dBb8ULTx4Gc1rdMc",
+  "track_name": "Juicy",
+  "artist": "The Notorious B.I.G.",
+  "album": "Greatest Hits",
+  "reason": "",
+  "album_art": "https://i.scdn.co/image/ab67616d00001e02f7a29d6fe5d39ec9313a19cb",
+  "duration_ms": 285760,
+  "duration_formatted": "4:45",
+  "is_new": false,
+  "preview_url": null,
+  "spotify_url": "https://open.spotify.com/track/2AP7m2dBb8ULTx4Gc1rdMc"
+}

@@ -1,0 +1,3 @@
+/* Google Fonts are loaded dynamically via JavaScript in App.tsx to avoid
+   Figma's preview sandbox intercepting @import URL requests and throwing
+   TypeError: Failed to fetch. Do not add @import url() calls here. */
