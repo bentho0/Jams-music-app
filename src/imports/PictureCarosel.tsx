@@ -1,18 +1,18 @@
-import imgFrame11 from "figma:asset/91e27ff996613f9f938ceb824ea826782947d150.png";
-import imgFrame13 from "figma:asset/612ef5b329b80e17dee22db97e1e5e0192d6842b.png";
-import imgFrame21 from "figma:asset/1b5ff05cf3bd78fd850ed84324b46fc792e16e9d.png";
-import imgFrame12 from "figma:asset/e989678b82094821988125fff6d0a387cc062105.png";
-import imgFrame16 from "figma:asset/0f3d82602ef432077e6a41c68f06b4801c6aab34.png";
-import imgFrame15 from "figma:asset/da6c37e188c111ddd1f03d03c23aa4967fb32ee5.png";
-import imgFrame14 from "figma:asset/ef594a660caad80f9ce6b0cbbc4cb86f16d119dd.png";
-import imgFrame17 from "figma:asset/d689bf8caaf9e415a351c2f45ab643f24d8ab221.png";
-import imgFrame18 from "figma:asset/83fee6538db8d8f29a9edcb7199fee923da7672c.png";
-import imgFrame22 from "figma:asset/4538d2b61bbc9d880e96385cbe92133a85088189.png";
-import imgFrame23 from "figma:asset/03978d2df1989afbccaf0f0b58d184e91db7eadb.png";
-import imgFrame24 from "figma:asset/6be6beb294d174f88cfab1e3f7f4ceb675fb2f25.png";
-import imgFrame25 from "figma:asset/42c61559a3a6f14a5f4cd720782c35c3b1faa949.png";
-import imgFrame26 from "figma:asset/fdda2fcfbf3dc9d0cd96d3d8a7dd14c7d6a23934.png";
-import imgFrame27 from "figma:asset/0833103bda7670ad1a2ae14fccea3f93db529f79.png";
+import imgFrame11 from "@/assets/91e27ff996613f9f938ceb824ea826782947d150.png";
+import imgFrame13 from "@/assets/612ef5b329b80e17dee22db97e1e5e0192d6842b.png";
+import imgFrame21 from "@/assets/1b5ff05cf3bd78fd850ed84324b46fc792e16e9d.png";
+import imgFrame12 from "@/assets/e989678b82094821988125fff6d0a387cc062105.png";
+import imgFrame16 from "@/assets/0f3d82602ef432077e6a41c68f06b4801c6aab34.png";
+import imgFrame15 from "@/assets/da6c37e188c111ddd1f03d03c23aa4967fb32ee5.png";
+import imgFrame14 from "@/assets/ef594a660caad80f9ce6b0cbbc4cb86f16d119dd.png";
+import imgFrame17 from "@/assets/d689bf8caaf9e415a351c2f45ab643f24d8ab221.png";
+import imgFrame18 from "@/assets/83fee6538db8d8f29a9edcb7199fee923da7672c.png";
+import imgFrame22 from "@/assets/4538d2b61bbc9d880e96385cbe92133a85088189.png";
+import imgFrame23 from "@/assets/03978d2df1989afbccaf0f0b58d184e91db7eadb.png";
+import imgFrame24 from "@/assets/6be6beb294d174f88cfab1e3f7f4ceb675fb2f25.png";
+import imgFrame25 from "@/assets/42c61559a3a6f14a5f4cd720782c35c3b1faa949.png";
+import imgFrame26 from "@/assets/fdda2fcfbf3dc9d0cd96d3d8a7dd14c7d6a23934.png";
+import imgFrame27 from "@/assets/0833103bda7670ad1a2ae14fccea3f93db529f79.png";
 
 function Frame() {
   return (
